@@ -255,7 +255,7 @@
 
                 spinner.css({
                     top:  inputOffset.top + (inputHeight - spinnerHeight)/2 - 1,
-                    left: inputOffset.left + inputWidth - spinnerWidth - 2,
+                    left: inputOffset.left + inputWidth - spinnerWidth - 2
                 });
             };
 
@@ -442,11 +442,11 @@
                 var ch;
                 var index;
                 for( var i=0; i<val.length; i++ ){
-                    ch = val[i];                    
+                    ch = val.charAt(i);                    
                     index = en.indexOf(ch);
 
                     if(index > -1){
-                        strNew += ru[index];
+                        strNew += ru.charAt(index);
                         continue;
                     }
 
